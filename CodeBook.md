@@ -8,7 +8,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 A full description of the measured signals is available at the original site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The following signals were extracted from the original data:
+The following features were extracted from the original data:
 
   - tBodyAcc for axis X, Y and Z;
   - tGravityAcc for axis X, Y and Z;
@@ -28,10 +28,10 @@ The following signals were extracted from the original data:
   - fBodyGyroMag
   - fBodyGyroJerkMag
 
-For each of these features, the following variables are extracted from the data and present in the tidy data set:
+For each of these features, only the following measures are extracted from the data and present in the tidy data set:
 
-  - <feature_name>Mean: Mean value
-  - <feature_name>Std: Standard deviation
+  - `<feature_name>`Mean: Mean value
+  - `<feature_name>`Std: Standard deviation
 
 Two extra variables are added to the tidy data set:
 
