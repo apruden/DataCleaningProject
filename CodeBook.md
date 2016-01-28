@@ -2,9 +2,13 @@
 
 ## Variables
 
-The variables are derived from the signal measures in the data files. For an explanation of the different measures, read the file `UCI HAR Dataset/features_info.txt` inside the compressed data set file.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
-The following signals were measured:
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+
+A full description of the measured signals is available at the original site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The following signals were extracted from the original data:
 
   - tBodyAcc for axis X, Y and Z;
   - tGravityAcc for axis X, Y and Z;
@@ -26,13 +30,13 @@ The following signals were measured:
 
 For each of these features, the following variables are extracted from the data and present in the tidy data set:
 
-  - <signal>Mean: Mean value
-  - <signal>Std: Standard deviation
+  - <feature_name>Mean: Mean value
+  - <feature_name>Std: Standard deviation
 
 Two extra variables are added to the tidy data set:
 
-  - Activity: The labeled activity name
-  - Subject: The subject identifier.
+  - Activity: The labeled activity name which can be: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING;
+  - Subject: The subject identifier, which is an integer number between 1 to 30.
 
 In total there are 68 variables in the resulting tidy data set.
 

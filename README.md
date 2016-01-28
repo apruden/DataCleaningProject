@@ -1,5 +1,16 @@
 ## Data Cleaning Project
 
+### Contents
+
+  - `run_analysis.R` - processes the original data set and outputs tidy data sets;
+  - `CodeBook.md` - describes the variables in the tidy data set.
+
+### Original Data
+
+The original data set corresponds to data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the original site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+A copy of the original data set is available at: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 ### Instructions
 
 Source the script `run_analysis.R` to process UCI HAR Dataset:
